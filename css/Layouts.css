@@ -1,0 +1,54 @@
+/* db Design Layout */
+.db-g__container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 70px 1fr;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "sidebar footer";
+  height: 100vh;
+}
+
+.db-g__header {
+  grid-area: header;
+  box-shadow: var(--dp-shadow-4);
+}
+
+.db-g__sidebar {
+  grid-area: sidebar;
+  background: var(--secondary-color);
+  box-shadow: var(--dp-shadow-4);
+}
+
+.db-g__main {
+  grid-area: main;
+}
+
+.db-g__footer {
+  grid-area: footer;
+  background: var(--black-color);
+  color: var(--off-white);
+  padding: var(--X-Y-padding);
+}
+
+/* The Nav */
+.db-nav__lists {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.db-logo__container {
+  position: relative;
+  top: 4px;
+}
+
+/* .nav-item{
+  border: 1px solid crimson;
+} */
+
+.db-nav__svg-notif {
+  margin-left: auto;
+  margin-inline-end: 20px;
+}

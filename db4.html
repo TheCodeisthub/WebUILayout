@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="css/db4.css" />
+    <title>Dashboard | 4</title>
+  </head>
+  <body>
+    <div class="db4__container">
+      <header class="db4-header container">
+        <nav class="db4-nav container">
+          <ul class="db4-nav--lists">
+            <li>
+              <a href=""
+                ><img src="img/WebUILayout_logo.png" width="50%" alt="logo"
+              /></a>
+            </li>
+
+            <li class="db4-nav--item2">
+              <span class="relative-text">Taylor</span>
+              <img src="img/svg/baseline-arrow_drop_down-24px.svg" alt="" />
+            </li>
+
+            <li><img class="avatar avatar-30" src="img/ada.jpeg" alt="" /></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Left Sidebar is devided into three section: profile, Award & Races-->
+      <aside class="db4__l-sidebar container">
+        <div class="l-sidebar__section-1">
+          <img
+            class="avatar avatar-100"
+            src="img/ada.jpeg"
+            width="50%"
+            alt=""
+          />
+          <p>Taylor Sailor</p>
+          <p>Long Distance Runner</p>
+          <small>Croatia</small>
+          <div class="l-sidebar--btn">
+            <button class="btn btn-orange">Edit Profile</button>
+            <button class="btn btn-dark">View Profile As</button>
+          </div>
+        </div>
+        <br />
+        <hr />
+        <br />
+        <div class="l-sidebar__section-2">
+          <span>
+            <label class="l-sidebar--label">
+              <span class="l-sidebar--checkmark"></span>
+            </label>
+            <label class="l-sidebar--label">
+              <span class="l-sidebar--checkmark"></span>
+            </label>
+            <label class="l-sidebar--label">
+              <span class="l-sidebar--checkmark"></span>
+            </label>
+            <label class="l-sidebar--label">
+              <span class="l-sidebar--checkmark"></span>
+            </label>
+            <!-- <input type="checkbox" name="" id="" /> -->
+            <h4>Levels</h4>
+          </span>
+
+          <span>
+            <h4>163</h4>
+            <p>RUNS</p>
+          </span>
+
+          <span>
+            <h4>16</h4>
+            <p>Marathons</p>
+          </span>
+
+          <span>
+            <h4>37</h4>
+            <p>Scores</p>
+          </span>
+        </div>
+        <br />
+        <hr />
+
+        <div class="l-sidebar__section-3">
+          <span class="l-sidebar--section-3-flex">
+            <span>
+              <h4>NYC Marathon</h4>
+              <p>4th Place - Women</p>
+            </span>
+            <p>2018</p>
+          </span>
+
+          <span class="l-sidebar--section-3-flex">
+            <span>
+              <h4>Berlin Half Marathon</h4>
+              <p>7th Place - Women</p>
+            </span>
+            <p>2017</p>
+          </span>
+
+          <span class="l-sidebar--section-3-flex">
+            <span>
+              <h4>Warsaw Marathon</h4>
+              <p>10th Place - Women</p>
+            </span>
+            <p>2016</p>
+          </span>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <main class="db4__main">
+        <div class="db4-main__section-1 container">
+          <span>
+            <h3>Preview</h3>
+            <p>165 Runs SEP - FEB</p>
+            <select class="select-css">
+              <option>Monthly</option>
+              <option>Weekly</option>
+              <option>Daily</option>
+            </select>
+            <select class="select-css">
+              <option>Distance(km)</option>
+              <option>Marathons</option>
+              <option>Position</option>
+            </select>
+          </span>
+
+          <span class="db4-main__inner-section-1">
+            <span>
+              <h4>2,923</h4>
+              <p>Miles</p>
+            </span>
+
+            <span>
+              <h4>123,8</h4>
+              <p>Houses</p>
+            </span>
+
+            <span>
+              <h4>65,932</h4>
+              <p>Elevation</p>
+            </span>
+          </span>
+        </div>
+      </main>
+
+      <!-- Right Sidebar -->
+      <aside class="db4__r-sidebar container">
+        <h4>Running Summary</h4>
+        <div class="r-sidebar__section-container">
+          <!-- First Animation Div's -->
+          <div class="lds-css">
+            <div style="width:100%;height:100%" class="lds-rolling-1">
+              <div></div>
+            </div>
+            <span>
+              <p class="lds-css--p">16/24</p>
+              <p class="lds-css--p">Running Goals</p>
+            </span>
+          </div>
+
+          <!-- Second Animation Div's -->
+          <div class="lds-css">
+            <div style="width:100%;height:100%" class="lds-rolling-2">
+              <div></div>
+            </div>
+            <span>
+              <p class="lds-css--p">9/12</p>
+              <p class="lds-css--p">Runs Completed</p>
+            </span>
+          </div>
+
+          <!-- Third Animation Div's -->
+          <div class="lds-css">
+            <div style="width:100%;height:100%" class="lds-rolling-3">
+              <div></div>
+            </div>
+            <span>
+              <p class="lds-css--p">145/216</p>
+              <p class="lds-css--p">Runs Completed</p>
+            </span>
+          </div>
+        </div>
+        <hr />
+        <br />
+
+        <div class="r-sidebar__section-2">
+          <h4>My Tasks</h4>
+          <label class="r-sidebar--label"
+            >Apply For Marathon and Pay Fees
+            <input type="checkbox" checked="checked" />
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="r-sidebar--label"
+            >Create Gaming map for the race and test it before May 27th
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="r-sidebar--label"
+            >Create a map for Running in mountains
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="r-sidebar--label"
+            >Upload all the images from charity run you organized in march
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </aside>
+
+      <!-- Footer -->
+      <footer class="db4__footer">
+        <ul class="db4-footer--lists">
+          <li class="db4-footer--item1">
+            <a href=""
+              ><img
+                class="db4-footer--img"
+                src="img/svg_notif.svg"
+                width="20%"
+                alt=""
+            /></a>
+          </li>
+
+          <li class="db4-footer--item2">
+            <a href=""
+              ><img
+                class="db4-footer--img"
+                src="img/svg/baseline-forum-24px.svg"
+                width="20%"
+                alt=""
+            /></a>
+          </li>
+
+          <li class="db4-footer--item3">
+            <a href=""
+              ><img
+                class="db4-footer--img"
+                src="img/svg/baseline-group_add-24px.svg"
+                width="20%"
+                alt=""
+            /></a>
+          </li>
+
+          <li class="db4-footer--item4">
+            <a href=""
+              ><img
+                class="db4-footer--img"
+                src="img/svg/baseline-account_circle-24px.svg"
+                width="20%"
+                alt=""
+            /></a>
+          </li>
+
+          <li class="db4-footer--item5">
+            <a href=""
+              ><img
+                class="db4-footer--img"
+                src="img/svg/baseline-create-24px.svg"
+                width="20%"
+                alt=""
+            /></a>
+          </li>
+
+          <li class="db4-footer--item6">
+            <a href=""
+              ><img
+                class="db4-footer--img"
+                src="img/svg/baseline-lock-24px.svg"
+                width="20%"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

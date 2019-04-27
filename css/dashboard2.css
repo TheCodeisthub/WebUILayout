@@ -1,0 +1,145 @@
+:root {
+  --db2-secondary-color: #1d1f32;
+  --db2-primary-color: #2e2c4d;
+  --db2-sea-blue-color: #5e7fde;
+}
+
+body {
+  background: var(--db2-secondary-color);
+  color: var(--off-white);
+}
+a {
+  color: var(--off-white);
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+.relative-text {
+  position: relative;
+  bottom: 5px;
+  margin-left: 4px;
+}
+
+.db-nav--item1 {
+  margin-top: 8px;
+}
+
+.db-nav__item2 {
+  margin-left: 6vw;
+  cursor: pointer;
+}
+
+.db2-g__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 70px 1fr;
+  grid-template-areas:
+    "header header header"
+    "l-sidebar main r-sidebar";
+  height: 100vh;
+}
+
+.db-header {
+  grid-area: header;
+  /* box-shadow: var(--dp-shadow-16); */
+  border-bottom: 1px solid var(--db2-secondary-color);
+  z-index: 2;
+  height: 10vh;
+}
+
+.search-input {
+  width: 40vw;
+  background: var(--db2-secondary-color);
+  color: var(--off-white);
+  border-radius: var(--hv-br);
+}
+
+.search-input::placeholder {
+  color: var(--off-white);
+  opacity: 0.5;
+}
+
+.db-header,
+.db-l__sidebar,
+.db-r__sidebar {
+  background: var(--db2-primary-color);
+}
+
+.db-l__sidebar {
+  grid-area: l-sidebar;
+  border-right: 1px solid var(--db2-secondary-color);
+}
+
+.db-main__content {
+  grid-area: main;
+  width: 70vw;
+  padding: 2em;
+}
+
+.db-r__sidebar {
+  grid-area: r-sidebar;
+}
+
+/* The Header Nav */
+
+.db-nav__lists {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.db-nav__item3,
+.db-nav__item4 {
+  margin-left: auto;
+}
+
+.db-nav__flex1__container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.db-nav__flex2__container {
+  display: flex;
+  margin-inline-end: 10vw;
+}
+
+.db-nav__item5 {
+  margin-inline-end: 20px;
+}
+
+.avatar-name {
+  position: relative;
+  bottom: 15px;
+  padding-inline-end: 10px;
+  color: #fff;
+}
+
+/* The Left Sidebar */
+
+/* The Main Content */
+.db-main__contents {
+  justify-content: space-between;
+  margin-top: 5vh;
+}
+
+.db-main--timeline {
+  margin-left: 9vw;
+}
+
+.db-main--sort {
+  opacity: 0.4;
+}
+
+.db-main__content-feed {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 5vh;
+}
+
+.db__item {
+  height: 25vh;
+  background: var(--db2-primary-color);
+  border-radius: var(--sm-br);
+  box-shadow: var(--dp-shadow-9);
+}

@@ -1,0 +1,123 @@
+:root {
+  --db3-secondary-color: #f4f8f9;
+  --db3-primary-color: #2e2c4d;
+  --db3-sea-blue-color: #5e7fde;
+}
+
+body {
+  background: var(--db3-secondary-color);
+  color: var(--db3-primary-color);
+  line-height: 2;
+}
+a {
+  color: var(--db3-primary-color);
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.sales--h4 {
+  font-size: 1.5em;
+  color: var(--db3-sea-blue-color);
+}
+
+.db3-g__container {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: 70px 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+  height: 100vh;
+}
+
+.db3-header {
+  grid-area: header;
+  height: 10vh;
+  width: 100%;
+  background: var(--primary-color);
+}
+
+.db3-nav--lists {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  /* justify-content: space-between; */
+}
+
+.db3-nav--logo,
+.db3-nav-item3 {
+  margin-left: auto;
+}
+
+.db3--search-input {
+  padding: var(--X-Y-padding);
+  width: 20vw;
+  border: none;
+}
+
+.db3-sidebar {
+  grid-area: sidebar;
+  /* width: 5vw; */
+  background: #fff;
+  box-shadow: var(--dp-shadow-1);
+}
+
+.db3-sidebar--lists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.db3-main {
+  grid-area: main;
+  padding: 4em;
+}
+
+.db3-main--items {
+  /* height: 25vh; */
+  background: #fff;
+  border-radius: var(--sm-br);
+  box-shadow: 0 2px 20px 0 #ccc;
+}
+
+.db3-main--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5vh;
+}
+
+.db3-main--grid1 {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 500px auto auto;
+  grid-template-areas:
+    "card1 card2 card3"
+    "card1 card4 card5";
+  height: 500px;
+}
+
+.db3-main--item1 {
+  grid-area: card1;
+}
+.db3-main--item2 {
+  grid-area: card2;
+}
+.db3-main--item3 {
+  grid-area: card3;
+}
+.db3-main--item4 {
+  grid-area: card4;
+}
+.db3-main--item5 {
+  grid-area: card5;
+}
+
+.db3-main--grid2 {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  height: 40vh;
+  margin-top: 10vh;
+}

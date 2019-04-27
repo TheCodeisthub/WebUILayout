@@ -1,0 +1,157 @@
+@import url("css/dashboard2.css");
+@import url("css/dashboard3.css");
+@import url("css/db4.css");
+@import url("css/layouts.css");
+
+:root {
+  /* Colors */
+  --primary-color: #fff;
+  --secondary-color: #131117;
+  --black-color: #000;
+  --off-white: #f1f1f1;
+  --sea-blue: #11a1fa;
+
+  /* Box Shadows */
+  /* 1 to 4 dp elevation */
+  --dp-shadow-1: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  --dp-shadow-2: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  --dp-shadow-3: 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+    0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+  --dp-shadow-4: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  /* 6 to 9 dp elevation*/
+  --dp-shadow-6: 0 6px 10px 0 rgba(39, 34, 34, 0.14),
+    0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  --dp-shadow-8: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  --dp-shadow-9: 0 9px 12px 1px rgba(0, 0, 0, 0.14),
+    0 3px 16px 2px rgba(0, 0, 0, 0.12), 0 5px 6px -3px rgba(0, 0, 0, 0.2);
+  /* 12 to 24 dp elevation */
+  --dp-shadow-12: 0 12px 17px 2px rgba(0, 0, 0, 0.14),
+    0 5px 22px 4px rgba(0, 0, 0, 0.12), 0 7px 8px -4px rgba(0, 0, 0, 0.2);
+  --dp-shadow-16: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  --dp-shadow-24: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+
+    /* Animations */
+    --cubic-animate: transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+  /* Grid Theming */
+  --g-temp-col-3: repeat(3, 1fr);
+  --g-temp-col-4: repeat(4, 1fr);
+
+  /* Padding */
+  --X-Y-padding: 10px 15px;
+  --Z-padding: 1em;
+  /* Border radius */
+  --sm-br: 5px;
+  --md-br: 20px;
+  --hv-br: 50px;
+  --hv-pc-br: 50%;
+
+  /* Wrappers or container */
+  --container: 1em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Light";
+}
+
+:before,
+:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  background: var(--primary-color);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Buttons */
+.btn{
+  padding: var(--X-Y-padding);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn--addContacts{
+  background: slateblue;
+  border-radius: var(--hv-br);
+  color: var(--off-white);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 12px;
+  opacity: 1;
+}
+
+.btn--blue{
+  background: var(--sea-blue);
+  border-radius: var(--sm-br);
+  color: #fff;
+}
+
+.db3-nav--btn{
+  background: transparent;
+  /* margin-inline-end: 20px; */
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+hr{
+  opacity: .1;
+}
+
+.display-flex{
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: var(--hv-pc-br);
+  object-fit: cover;
+}
+
+.avatar-50{
+  width: 50px;
+  height: 50px;
+}
+.avatar-100{
+  width: 100px;
+  height: 100px;
+}
+.avatar-40{
+  width: 40px;
+  height: 40px;
+}
+
+.avatar-30{
+  width: 30px;
+  height: 30px;
+}
+
+.db-nav__logo {
+  width: 75%;
+}
+
